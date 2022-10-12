@@ -27,6 +27,18 @@ body {
 }
 
 .blogs-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: var(--fluid-width);
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.blogs-center2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
     width: var(--fluid-width);
     margin: 0 auto;
     max-width: var(--max-width);
