@@ -192,8 +192,10 @@ p {
 }
 
 .section-title {
-  margin-bottom: 4rem;
   text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 2rem;
 }
 
 .bg-grey {
@@ -285,13 +287,6 @@ Blogs
   transition: 0.5s ease-in-out all;
 }
 
-.section-title {
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  margin: 2rem;
-}
-
 .blog:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
@@ -336,3 +331,66 @@ Blogs
 Tiles
 =====================
 */
+
+.tiles {
+  padding: 4rem 0;
+}
+
+.tiles-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 12.5rem);
+  grid-template-areas: 
+    'a a b c'
+    'a a b d'
+    'e e e d'
+    'f f f f'
+    'g h h i'
+    'g h h i';
+}
+
+.tiles-center img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile-1 {
+  grid-area: a;
+}
+
+.tile-2 {
+  grid-area: b;
+}
+
+.tile-3 {
+  grid-area: d;
+}
+
+.tile-4 {
+  grid-area: c;
+}
+
+.tile-5 {
+  grid-area: e;
+}
+
+.tile-6 {
+  grid-area: g;
+}
+
+.tile-7 {
+  grid-area: f;
+}
+
+.tile-8 {
+  grid-area: i;
+}
+
+.tile-9 {
+  grid-area: h;
+}
