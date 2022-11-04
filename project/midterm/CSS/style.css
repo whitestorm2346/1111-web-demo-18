@@ -313,23 +313,23 @@ article {
 }
 
 .bar {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 8rem 1fr 5rem;
     align-items: center;
-    width: fit-content;
+    text-align: center;
 }
 
 .bar h2 {
     color: var(--secondary-dark);
     font-size: 20px;
-    padding: 1rem .5rem 1rem 1rem;
+    padding: 1rem;
     text-transform: none;
 }
 
 .bar .progress {
     background-color: var(--light);
     margin: 0 .5rem 0 1rem;
-    height: 1.15vh;
+    height: 5px;
     width: 20vw;
     border-radius: 50rem;
 }
