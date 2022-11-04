@@ -148,7 +148,7 @@ article {
 
 .card-link {
     background-color: var(--light);
-    height: auto;
+    height: fit-content;
     width: auto;
     max-width: 25rem;
     border-radius: 10px;
@@ -190,7 +190,8 @@ article {
 
 .card-info p {
     color: var(--normal);
-    padding: 1rem 0 ;
+    padding: 1rem 0;
+    line-height: 1.5rem;
 }
 
 .card-info span {
