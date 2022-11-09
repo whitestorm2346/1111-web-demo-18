@@ -32,6 +32,11 @@ a {
     user-select: none;
 }
 
+article {
+    padding: 1.5rem 0;
+    line-height: 1.2rem;
+}
+
 body {
     background-color: var(--primary-light);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -70,21 +75,39 @@ header {
     padding: 15px;
     text-transform: uppercase;
     font-size: 15px;
-}   
+}  
 
 .inner-menu {
     display: none;
-    margin: 1.5rem 0;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color: var(--secondary);
     border-radius: 0 0 5px 5px;
     width: fit-content;
 }
 
 .inner-menu ul {
+    display: block;
+    width: fit-content;
+    margin: 5px 0;
+    padding: .5rem;
     list-style-type: none;
 }
 
+.inner-menu li {
+    display: block;
+    text-align: left;
+    padding: .5rem 0;
+}
+
+.inner-menu ul li a {
+    display: block;
+    width: 100%;
+}
+
 .nav-link li a {
-    padding: .5rem;
+    padding: 3px;
     border-radius: 3px;
     background-color: var(--secondary);
     color: var(--light);
@@ -98,19 +121,6 @@ header {
 
 .nav-link li:hover .inner-menu {
     display: block;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: -15px;
-    background-color: var(--secondary);
-}
-
-.nav-link li:hover .inner-menu ul {
-    display: block;
-    margin: 10px 0;
-}
-
-.nav-link li:hover .inner-menu ul li {
-    text-align: left;
 }
 
 /* section part */
@@ -128,7 +138,8 @@ section {
 }
 
 .sub-title {
-    margin: 1rem;
+    margin: 0 1rem;
+    padding-top: 3rem;
     color: var(--light);
     text-shadow: var(--black-shadow);
 }
