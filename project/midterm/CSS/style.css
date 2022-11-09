@@ -148,8 +148,8 @@ article {
 
 .card-link {
     background-color: var(--light);
-    height: fit-content;
     width: auto;
+    height: fit-content;
     max-width: 25rem;
     border-radius: 10px;
     margin: .5rem 0;
