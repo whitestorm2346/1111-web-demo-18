@@ -26,28 +26,20 @@
         <ul class="nav-link">
           <li>
             <a href="#problem-solving"><b>問題解決</b></a>
+
+            <div class="inner-menu">
+              <ul>
+                <li><a href="#navbar-begula">navbar begula</a></li>
+                <li><a href="#inner-menu">inner menu</a></li>
+                <li><a href="#cards-hyperlink">cards hyperlink</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="#self-learning"><b>自主學習</b></a>
-
-            <div class="inner-menu">
-              <ul>
-                <li><a href="#html-css">HTML/CSS</a></li>
-                <li><a href="#javascript">JavaScript</a></li>
-                <li><a href="#php">php</a></li>
-                <li><a href="#python">Python</a></li>
-              </ul>
-            </div>
           </li>
           <li>
             <a href="#thoughts"><b>學習心得</b></a>
-
-            <div class="inner-menu">
-              <ul>
-                <li><a href="#midterm">期中篇</a></li>
-                <!-- <li><a href="#final">期末篇</a></li> -->
-              </ul>
-            </div>
           </li>
         </ul>
       </nav>
@@ -56,47 +48,69 @@
     <!-- problem solving section -->
     <section id="problem-solving">
       <h1 class="title chinese">問題解決</h1>
+
+      <h2 class="sub-title" id="navbar-begula">navbar beluga</h2>
+      <article class="chinese">
+        課堂中使用 javascript 去進行 window-sroll 的判斷，來新增/刪除 class，
+        需要去計算 navbar 的高度，才能避免在某個距離下，navbar 會消失的問題。
+        後來我的解決方式是直接使用 css ，將 position 設定為 sticky， 如此一來
+        navbar 就能夠一直存在且置頂。
+      </article>
+
+      <h2 class="sub-title" id="inner-menu">inner menu</h2>
+      <article class="chinese">
+        課堂中所教的 navbar，只能前往到指定的 section，不過許多 section
+        裡面會分成很多 part， 若單純使用一個 navbar
+        可能不太夠用，因此我上網找尋如何製作 inner menu， 當游標移至原本的
+        navbar 時，會顯示出該 section 裡面的其他 part 的 nav links，
+        這樣就能夠很輕易地透過 navbar 前往各個區塊。
+      </article>
+
+      <h2 class="sub-title" id="cards-hyperlink">cards hyperlink</h2>
+      <article class="chinese">
+        課堂中所教的自訂 card class
+        來呈現一些同類型的資料，我希望能夠做到點擊卡片， 就能夠前往指定的
+        URL，不過如果我將< a >標籤編寫在內部的 card-info class，
+        則只能點擊文字部分才能觸發超連結，點擊 card-img class 就沒有作用，
+        因此我上網查到可以將< a >標籤編寫於 card class 外層，如此一來，
+        點擊卡片任何地方都能觸發超連結，前往指定的 URL。
+      </article>
     </section>
 
     <!-- self learning section -->
     <section id="self-learning">
       <h1 class="title chinese">自主學習</h1>
 
-      <h2 class="sub-title" id="html-css">HTML/CSS</h2>
-      <!-- HTML/CSS part -->
-
-      <h2 class="sub-title" id="javascript">JavaScript</h2>
-      <!-- JavaScript part -->
-
-      <h2 class="sub-title" id="php">PHP</h2>
-      <!-- PHP part -->
-
-      <h2 class="sub-title" id="python">Python</h2>
-      <!-- Python part -->
+      <article class="chinese">
+        在選修到這門通識課之前，我對於 CSS 只是略懂，
+        大一的必修課也都只是教很基本的 HTML 跟 CSS，
+        後來因為我想要學得更完整，開始上 youtube 查詢網頁程式設計的教學，
+        開始有了比較全面的練習，不過仍然不太懂自己寫網頁要怎麼開始， 很常因為
+        CSS 不會寫就卡住。這門課已經修了半個學期，
+        透過老師的講解，我之前很多不懂的細節都弄清楚了， front-end 現在就只差
+        JavaScript 這個部分，我有稍微查過 js 的語法，
+        不過仍然缺少練習，還不是很熟練，希望自己能夠快點學會 front-end
+        的三個語法，再連接到 back-end，學習 php 跟 mySQL，製作出動態網頁。
+      </article>
     </section>
 
     <!-- thoughts section -->
     <section id="thoughts">
       <h1 class="title chinese">學習心得</h1>
 
-      <h2 class="sub-title chinese" id="midterm">期中篇</h2>
       <article class="chinese">
-        這堂通識課讓我收穫很多。首先是 Git Commands，雖然我高三就有在使用 Github 的習慣，
-        但是當時都是使用 Tortoise 這個視覺化介面來操作 Git，並未真正 Git Commands 的部分；
-        再來是 CSS 的設計，會選擇來修這門通識課最主要的原因，就是想要真的擁有自己撰寫網頁的能力，
+        這堂通識課讓我收穫很多。首先是 Git Commands，雖然我高三就有在使用 Github
+        的習慣， 但是當時都是使用 Tortoise 這個視覺化介面來操作 Git，並未真正
+        Git Commands 的部分； 再來是 CSS
+        的設計，會選擇來修這門通識課最主要的原因，就是想要真的擁有自己撰寫網頁的能力，
         不過之前在網路上自學網頁程式設計的時候，總是變成能夠跟著教學影片寫程式碼，
-        但想要自己寫一遍就毫無頭緒，特別是 CSS 跟 JavaScript。經過半個學期的練習，
-        以及老師講解的細節及運作原理，終於能夠理解大部分 CSS 的屬性要怎麼調整了，
-        也更加清楚自己要如何完成想要的效果，未來希望能夠快點把 JavaScript 給弄懂，
-        設計更完整的動態網頁。
+        但想要自己寫一遍就毫無頭緒，特別是 CSS 跟
+        JavaScript。經過半個學期的練習，
+        以及老師講解的細節及運作原理，終於能夠理解大部分 CSS
+        的屬性要怎麼調整了，
+        也更加清楚自己要如何完成想要的效果，未來希望能夠快點把 JavaScript
+        給弄懂， 設計更完整的動態網頁。
       </article>
-
-      <!-- 
-        <h2 class="sub-title chinese" id="final">期末篇</h2>
-        <article class="chinese">
-          未完成。
-        </article> 
-      -->
     </section>
 
     <!-- footer part -->
