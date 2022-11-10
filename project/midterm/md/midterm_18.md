@@ -66,6 +66,18 @@
 
 ### midterm-logs: all logs for midterm projects
 
+![](mid-logs.PNG)
+
 ```bash
 $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-11-04"
+b34e463 whitestorm2346  Thu Nov 10 06:43:16 2022 +0800  Finished midterm project
+1162dfa whitestorm2346  Thu Nov 10 05:23:59 2022 +0800  Created the markdown files
+01ba526 whitestorm2346  Thu Nov 10 04:38:09 2022 +0800  Merge branch 'main' of github.com:whitestorm2346/1111-web-demo-id
+7449112 whitestorm2346  Thu Nov 10 04:37:47 2022 +0800  Modified the css
+20ce67c whitestorm2346  Tue Nov 8 17:26:41 2022 +0800   Finished the home page and modified the inner menu part
+9d54122 whitestorm2346  Sun Nov 6 23:35:59 2022 +0800   Finished all cards of volleyball competition
+df31a56 whitestorm2346  Sun Nov 6 14:20:35 2022 +0800   Start to make the sections of learn_18.html
+472e1b3 whitestorm2346  Sun Nov 6 14:19:53 2022 +0800   Finished two cards of volleyball competition
+b580d49 whitestorm2346  Sat Nov 5 01:11:35 2022 +0800   Finished the article of program project cards
+d7c9d39 whitestorm2346  Fri Nov 4 15:35:28 2022 +0800   Changed to display grid instead of display flex for .bar
 ```
