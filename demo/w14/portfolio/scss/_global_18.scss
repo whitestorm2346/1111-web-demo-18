@@ -160,6 +160,11 @@ p {
   max-width: 1170px;
 }
 
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 .social-icons {
   margin-top: 3rem;
   width: 20rem;
@@ -175,6 +180,17 @@ p {
   &:hover {
     color: var(--clr-primary-5);
   }
+}
+
+.underline {
+  width: 5rem;
+  height: .25rem;
+  background-color: var(--clr-primary-5);
+  margin: 0 auto;
+}
+
+.bg-grey {
+  background-color: var(--clr-grey-10);
 }
 
 @media screen and (min-width: 992px) {
