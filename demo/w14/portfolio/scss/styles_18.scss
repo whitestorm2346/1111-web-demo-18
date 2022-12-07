@@ -149,6 +149,11 @@ Hero Page
     border-radius: var(--radius);
     position: relative;
   }
+
+  &-icons {
+    justify-items: start;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

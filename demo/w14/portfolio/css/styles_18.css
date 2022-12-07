@@ -169,6 +169,22 @@ p {
   max-width: 1170px;
 }
 
+.social-icons {
+  margin-top: 3rem;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--clr-grey-4);
+}
+.social-icon:hover {
+  color: var(--clr-primary-5);
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -304,6 +320,10 @@ Hero Page
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
+}
+.hero-icons {
+  justify-items: start;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
