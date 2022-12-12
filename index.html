@@ -4,32 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style_18.css">
+    <link rel="stylesheet" href="./css/style_18.css" />
     <title>My Homepage</title>
   </head>
   <body>
-    <div>
-      <ul>
-        <li>
-          <a href="./demo_18.html">Demo</a>
-        </li>
-        <li>
-          <a href="./project/midterm/mid-project_18.html">Midterm Projects</a>
-        </li>
-      </ul>
+    <div class="cover-photo">
+      <img src="./images/TKU-CSIE-VB.jpg" alt="淡江資工系排" />
     </div>
 
-    <section class="hero">
+    <nav class="navbar" id="nav">
+      <ul class="nav-links">
+        <li><a href="#hero">hero</a></li>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="#works">works</a></li>
+      </ul>
 
-    </section>
+      <ul class="nav-links">
+        <li><a href="./demo_18.html">demo</a></li>
+        <li><a href="./learning_18.html">learning</a></li>
+        <li><a href="#works">works</a></li>
+      </ul>
 
-    <section class="resume">
+      <button class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
-    </section>
+    <nav class="sidebar">
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
 
-    <section class="works">
-      
-    </section>
+      <ul class="sidebar-links">
+        <li><a href="#hero">hero</a></li>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="#works">works</a></li>
+      </ul>
+
+      <ul class="sidebar-links">
+        <li><a href="./demo_18.html">demo</a></li>
+        <li><a href="./learning_18.html">learning</a></li>
+        <li><a href="#works">works</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="hero"></section>
+
+    <section class="resume" id="resume"></section>
+
+    <section class="works" id="works"></section>
 
     <script src="./js/script_18.js"></script>
   </body>

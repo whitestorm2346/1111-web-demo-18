@@ -21,5 +21,17 @@ function showpage(index){
         case 6:
             p.innerHTML = `<iframe src="./demo/w09/resume_18.html" width="100%" height="100%" />`;
             break;
+        case 7:
+            p.innerHTML = `<iframe src="./demo/w11/portfolio/index.html" width="100%" height="100%" />`;
+            break;
+        case 8:
+            p.innerHTML = `<iframe src="./demo/w12/portfolio/index.html" width="100%" height="100%" />`;
+            break;
+        case 9:
+            p.innerHTML = `<iframe src="./demo/w13/portfolio/index.html" width="100%" height="100%" />`;
+            break;
+        case 10:
+            p.innerHTML = `<iframe src="./demo/w14/portfolio/index.html" width="100%" height="100%" />`;
+            break;
     }
 }
