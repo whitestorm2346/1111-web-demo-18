@@ -11,9 +11,16 @@
   /* lighter shades of primary color */
   --clr-primary-6: #5ec7ff;
   --clr-primary-7: #71cdff;
-  --clr-primary-8: #92d8fe;
-  --clr-primary-9: #bae7ff;
+  --clr-primary-8: #92d4f7;
+  --clr-primary-9: #c9ecff;
   --clr-primary-10: #ecf8ff;
+  /* background-color */
+  --clr-bg-1: #C9ECFF;
+  --clr-bg-2: #b0f7ff;
+  --clr-bg-3: #b0fff6;
+  --clr-bg-4: #c0ffdf;
+  --clr-bg-5: #d7ffc1;
+  --clr-bg-6: #ffff9b;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -144,7 +151,7 @@ p {
 }
 /* section */
 .section {
-  padding: 5rem 0;
+  height: calc(100vh - 4rem);
 }
 
 .section-center {

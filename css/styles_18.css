@@ -10,9 +10,16 @@
   /* lighter shades of primary color */
   --clr-primary-6: #5ec7ff;
   --clr-primary-7: #71cdff;
-  --clr-primary-8: #92d8fe;
-  --clr-primary-9: #bae7ff;
+  --clr-primary-8: #92d4f7;
+  --clr-primary-9: #c9ecff;
   --clr-primary-10: #ecf8ff;
+  /* background-color */
+  --clr-bg-1: #C9ECFF;
+  --clr-bg-2: #b0f7ff;
+  --clr-bg-3: #b0fff6;
+  --clr-bg-4: #c0ffdf;
+  --clr-bg-5: #d7ffc1;
+  --clr-bg-6: #ffff9b;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -153,7 +160,7 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 0;
+  height: calc(100vh - 4rem);
 }
 
 .section-center {
@@ -211,6 +218,9 @@ Navbar
   font-size: 2rem;
   color: var(--clr-primary-5);
   cursor: pointer;
+}
+.nav-btn:hover {
+  color: var(--clr-primary-7);
 }
 
 @media screen and (min-width: 768px) {
@@ -284,7 +294,12 @@ Sidebar
 }
 .sidebar .social-icon li {
   padding: 1rem;
+}
+.sidebar .social-icon li a {
   color: var(--clr-grey-5);
+}
+.sidebar .social-icon li a:hover {
+  color: var(--clr-primary-5);
 }
 .sidebar .close-btn {
   position: absolute;
@@ -295,7 +310,6 @@ Sidebar
   border-color: transparent;
   color: #bb2525;
   cursor: pointer;
-  transition: var(--transition);
 }
 .sidebar .close-btn:hover {
   color: #e66b6b;
@@ -307,11 +321,11 @@ Sidebar
 
 /*
 =============== 
-Hero Page
+Hero 
 ===============
 */
 .hero {
-  background-color: var(--clr-primary-10);
+  background-color: var(--clr-bg-1);
 }
 .hero .section-center {
   display: grid;
@@ -347,6 +361,33 @@ Hero Page
     border: 0.25rem solid var(--clr-primary-5);
     border-radius: var(--radius);
   }
+}
+/*
+=============== 
+Resume 
+===============
+*/
+.resume {
+  background-color: var(--clr-bg-2);
+}
+
+/*
+=============== 
+Works 
+===============
+*/
+.works {
+  background-color: var(--clr-bg-1);
+}
+
+/*
+=============== 
+footer 
+===============
+*/
+.footer {
+  height: 20vh;
+  background-color: var(--clr-grey-1);
 }
 
 /*# sourceMappingURL=styles_18.css.map */

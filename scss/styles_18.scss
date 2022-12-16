@@ -40,6 +40,10 @@ Navbar
     font-size: 2rem;
     color: var(--clr-primary-5);
     cursor: pointer;
+
+    &:hover {
+      color: var(--clr-primary-7);
+    }
   }
 }
 
@@ -127,7 +131,14 @@ Sidebar
 
     li {
       padding: 1rem;
-      color: var(--clr-grey-5);
+
+      a {
+        color: var(--clr-grey-5);
+
+        &:hover {
+          color: var(--clr-primary-5);
+        }
+      }
     }
   }
 
@@ -140,7 +151,6 @@ Sidebar
     border-color: transparent;
     color: #bb2525;
     cursor: pointer;
-    transition: var(--transition);
 
     &:hover {
       color: #e66b6b;
@@ -154,12 +164,12 @@ Sidebar
 
 /*
 =============== 
-Hero Page
+Hero 
 ===============
 */
 
 .hero {
-  background-color: var(--clr-primary-10);
+  background-color: var(--clr-bg-1);
 
   .section-center {
     display: grid;
@@ -202,4 +212,35 @@ Hero Page
       }
     }
   }
+}
+
+/*
+=============== 
+Resume 
+===============
+*/
+
+.resume {
+  background-color: var(--clr-bg-2);
+}
+
+/*
+=============== 
+Works 
+===============
+*/
+
+.works {
+  background-color: var(--clr-bg-1);
+}
+
+/*
+=============== 
+footer 
+===============
+*/
+
+.footer {
+  height: 20vh;
+  background-color: var(--clr-grey-1);
 }
