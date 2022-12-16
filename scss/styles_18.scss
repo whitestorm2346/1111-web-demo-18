@@ -7,24 +7,25 @@ Navbar
 */
 
 .nav {
+  position: sticky;
+  top: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 4rem;
   background-color: var(--clr-primary-10);
   transition: var(--transition);
 
-  &-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-
-  &-header h3 {
-    padding-top: 0.7rem;
+  .web-title {
+    width: fit-content;
+    height: fit-content;
+    
+    h3 {
+      padding-left: 5vw;
+      width: fit-content;
+      margin: auto;
+      color: var(--clr-grey-2);
+    }
   }
 
   &-links {
@@ -42,25 +43,35 @@ Navbar
   }
 }
 
-.navbar-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 5;
-  box-shadow: var(--light-shadow);
-}
-
 @media screen and (min-width: 768px) {
   .nav {
     &-links {
+      width: 50vw;
       display: flex;
       justify-content: space-around;
       align-items: center;
       gap: 1.5rem;
       position: absolute;
       right: 3rem;
+    }
+
+    &-options {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin: 0 2vw;
+
+        a {
+          color: var(--clr-grey-2);
+
+          &:hover {
+            color: var(--clr-primary-5);
+            border-bottom: 2px solid var(--clr-highlight-1);
+            padding-bottom: .2rem;
+          }
+        }
+      }
     }
 
     &-btn {
@@ -86,8 +97,15 @@ Sidebar
   justify-content: center;
   align-items: center;
   transform: translateX(-100%);
+  transition: var(--transition);
 
   &-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  &-options {
     text-align: center;
 
     a {
@@ -99,6 +117,17 @@ Sidebar
       &:hover {
         color: var(--clr-primary-5);
       }
+    }
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+
+    li {
+      padding: 1rem;
+      color: var(--clr-grey-5);
     }
   }
 

@@ -2,18 +2,18 @@
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(43, 86%, 17%);
-  --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
-  --clr-primary-4: hsl(42, 63%, 48%);
+  --clr-primary-1: #002D62;
+  --clr-primary-2: #004D87;
+  --clr-primary-3: #0070AE;
+  --clr-primary-4: #0094D6;
   /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-5: #41BBFF;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(43, 89%, 70%);
-  --clr-primary-7: hsl(43, 90%, 76%);
-  --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-6: #5ec7ff;
+  --clr-primary-7: #71cdff;
+  --clr-primary-8: #92d8fe;
+  --clr-primary-9: #bae7ff;
+  --clr-primary-10: #ecf8ff;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -26,6 +26,9 @@
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-highlight-1: #0055B2; 
+  --clr-highlight-2: #E6F4F1; 
+  --clr-highlight-3: #FCFCD4; 
   --clr-white: #fff;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
@@ -149,6 +152,15 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+.underline {
+  width: 5rem;
+  height: .25rem;
+  background-color: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
