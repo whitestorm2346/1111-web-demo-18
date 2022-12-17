@@ -406,8 +406,32 @@ Projects
       gap: 1rem;
       grid-template-areas: 
         'a b b'
-        'a c d'
-      ;
+        'a c d';
+    }
+
+    .project {
+      width: 100%;
+      height: 100%;
+
+      &-img {
+        height: 100%;
+      }
+
+      &-1 {
+        grid-area: a;
+      }
+
+      &-2 {
+        grid-area: b;
+      }
+
+      &-3 {
+        grid-area: c;
+      }
+
+      &-4 {
+        grid-area: d;
+      }
     }
   }
 }

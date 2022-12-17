@@ -544,6 +544,25 @@ Projects
     gap: 1rem;
     grid-template-areas: "a b b" "a c d";
   }
+  .projects .project {
+    width: 100%;
+    height: 100%;
+  }
+  .projects .project-img {
+    height: 100%;
+  }
+  .projects .project-1 {
+    grid-area: a;
+  }
+  .projects .project-2 {
+    grid-area: b;
+  }
+  .projects .project-3 {
+    grid-area: c;
+  }
+  .projects .project-4 {
+    grid-area: d;
+  }
 }
 
 /*# sourceMappingURL=styles_18.css.map */
