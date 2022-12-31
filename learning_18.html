@@ -94,11 +94,144 @@
       </div>
     </nav>
 
-    <section class="section problem-solving" id="problem-solving"></section>
+    <section class="problem-solving" id="problem-solving">
+      <div class="section-center">
+        <div class="section-title">
+          <h2>Problem Solving 問題解決</h2>
+          <div class="underline"></div>
+        </div>
 
-    <section class="section self-learning" id="self-learning"></section>
+        <div class="problem">
+          <div class="problem-title">
+            <h3>sidebar 顯示錯誤</h3>
+          </div>
+          <div class="problem-describe">
+            <p>
+              在某次測試時突然發現sidebar的按鈕被原本的navbar給擋住，
+              原因是因為當初在設計navbar置頂時，有調整navbar的z-index，
+              把sidebar的按鈕蓋過去了，所以後來也將sidebar的z-index提高，
+              才成功顯示出完整的sidebar。
+            </p>
+          </div>
+          <img src="./images/problem-1.png" alt="" class="problem-img" />
+        </div>
 
-    <section class="section thoughts" id="thoughts"></section>
+        <div class="problem">
+          <div class="problem-title">
+            <h3>內部標籤link 定位錯誤</h3>
+          </div>
+          <div class="problem-describe">
+            <p>
+              透過a標籤來當作內部的nav link，點擊該nav link時，
+              會移動畫面到指定的id標籤，並定位在視窗最上方，
+              不過因為我們有設計置頂navbar，所以section-title會因此被擋住，
+              需要再用滑鼠滾輪才能顯示出來，後來我就將section-title加上
+              padding-top:
+              5rem，透過增加區塊高度來抵銷掉原本被navbar擋住的部分，
+              就能夠在點擊nav link時，直接顯示出完整的section。
+            </p>
+          </div>
+          <img src="./images/problem-2.png" alt="" class="problem-img" />
+        </div>
+
+        <div class="problem">
+          <div class="problem-title">
+            <h3>progress-bar 優化呈現樣式</h3>
+          </div>
+          <div class="problem-describe">
+            <p>
+              期中專案裡，我將progress-bar跟skills同時呈現，
+              但我後來覺得progress-bar有點太佔空間，因此期末專案我將設計為透過li:
+              hover來顯示出指定的progress-bar，節省掉許多空間。
+            </p>
+          </div>
+          <img src="./images/problem-3.png" alt="" class="problem-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="self-learning" id="self-learning">
+      <div class="section-center">
+        <div class="section-title">
+          <h2>Self Learning 自我學習</h2>
+          <div class="underline"></div>
+        </div>
+
+        <article>
+          <p>
+            為了設計出好看的網頁，除了上課使用的demo之外，
+            我會另外去網路上查詢其他人製作的template，
+            設計出屬於自己的版面。另外在配色的部分也是花我許多時間，
+            顏色搭配得好，畫面才能夠讓人看起來很舒服，且能夠快速抓到重點部分，
+            因此我也上網查詢color palette generator，測試好多種顏色搭配，
+            最後選擇使用淡藍色當作主色。在contact的連結部分，
+            我希望能夠點擊line以及discord的按鈕就能直接發出好友邀請，
+            因此上網查詢如何得到個人好友邀請的link，
+            這樣就不用再透過ID來搜尋我的帳號，讓使用者更加方便。
+          </p>
+        </article>
+
+        <ul class="reference">
+          <h4>參考資料：</h4>
+
+          <li>
+            <h4>hero page templates</h4>
+            <a
+              href="https://www.mockplus.com/blog/post/hero-image-website-examples"
+              class="btn"
+              >link to page</a
+            >
+          </li>
+          <li>
+            <h4>color palette generator</h4>
+            <a href="https://mycolor.space/" class="btn">link to page</a>
+          </li>
+          <li>
+            <h4>making line personal link</h4>
+            <a
+              href="https://www.tech-girlz.com/2020/12/line-link.html#:~:text=%E5%A6%82%E4%BD%95%E7%94%A2%E7%94%9F%20LINE%20%E5%80%8B%E4%BA%BA%E7%B6%B2%E5%9D%80%E3%80%81%E9%80%A3%E7%B5%90%EF%BC%9F%201%20%E5%89%8D%E5%BE%80%20LINE%20%E4%B8%BB%E9%A0%81%202,4%20%E9%81%B8%E6%93%87%E3%80%8C%E7%B0%A1%E8%A8%8A%E3%80%8D%205%20%E9%81%B8%E6%93%87%E4%BB%BB%E4%BD%95%E4%B8%80%E5%80%8B%E8%81%AF%E7%B5%A1%E4%BA%BA%206%20%E8%A4%87%E8%A3%BD%E8%A9%B2%E4%B8%B2%20LINE%20%E5%80%8B%E4%BA%BA%E7%B6%B2%E5%9D%80%2F%E9%80%A3%E7%B5%90"
+              class="btn"
+              >link to page</a
+            >
+          </li>
+          <li>
+            <h4>making discord personal link</h4>
+            <a
+              href="https://www.tech-girlz.com/2022/02/discord-user-id-user-link.html"
+              class="btn"
+              >link to page</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="thoughts" id="thoughts">
+      <div class="section-center">
+        <div class="section-title">
+          <h2>Thoughts 心得感想</h2>
+          <div class="underline"></div>
+        </div>
+
+        <article>
+          <p>
+            經過一個學期的課程，學到了非常完整的靜態網頁前端設計技巧，
+            在設計期末專案時，比較清楚要怎麼移動各個區塊，
+            來達到自己預期的畫面呈現，雖然在設計排版時，
+            仍然花費許多時間調整，想盡辦法讓網頁能夠看起來很壯觀，
+            過程中也一度想到覺得很煩，導致一開始的進度有點慢，
+            後來不斷的嘗試各個排版，才讓自己覺得滿意。
+            不過現在的我能夠透過html搭配sass產生的css來製作出好看的網頁，
+            已經達成當初加選這門通識的目標，只要之後自己再研究動態網頁的編寫，
+            以及學好下學期的資料庫課程，將網頁後端也建立起來，
+            就能寫出功能更加完善、畫面更加豐富的網頁。
+            能夠習得網頁程式設計這個技能，我非常的開心，
+            很感謝自己能夠堅持到最後，成功寫出讓自己滿意的個人網頁，
+            期待未來的自己，能夠學得更多技術，將個人網頁編寫得更完善。
+          </p>
+        </article>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-logo">
@@ -109,7 +242,12 @@
         <ul class="links">
           <li><a href="https://www.tku.edu.tw/">TKU</a></li>
           <li><a href="http://www.csie.tku.edu.tw/">TKU-CSIE</a></li>
-          <li><a href="https://www.instagram.com/tkuvbboy__/">TKU-VB</a></li>
+          <li>
+            <a href="./project/midterm/mid-project_18.html">Midterm-Page</a>
+          </li>
+          <li>
+            <a href="index.html#hero">Contact</a>
+          </li>
         </ul>
       </div>
     </footer>

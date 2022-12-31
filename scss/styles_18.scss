@@ -553,10 +553,11 @@ footer
 
     .links {
       display: flex;
+      justify-content: space-around;
       
-      li {
-        margin: 0 5vw;
-        
+      li {     
+        margin: 0 2rem;
+
         a {
           color: var(--clr-grey-7);
 
@@ -573,5 +574,126 @@ footer
   .footer {
     grid-template-areas: 'logo reference';
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+=============== 
+learning_18 
+===============
+*/
+
+/*
+=============== 
+problem-solving 
+===============
+*/
+
+.problem-solving {
+  background-color: var(--clr-bg-6);
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  .section-center {
+    padding-bottom: 2rem;
+  }
+
+  .problem {
+    margin: 3rem auto;
+
+    &-title {
+      margin-top: 3rem;
+    }
+
+    &-describe {
+      p {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 2.5rem;
+        color: var(--clr-primary-1);
+      }
+    }
+
+    &-img {
+      max-width: 50rem;
+    }
+  }
+}
+
+/*
+=============== 
+self-learning
+===============
+*/
+
+.self-learning {
+  background-color: var(--clr-bg-4);
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  .section-center {
+    padding-bottom: 2rem;
+  }
+
+  article {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    
+    p {
+      color: var(--clr-primary-1);
+    }
+  }
+
+  .reference {
+    margin-top: 4rem;
+
+    li {
+      display: flex;
+      font-size: 1.25rem;
+      margin: 2rem 0;
+
+      h4 {
+        margin: auto 1rem;
+        width: fit-content;
+      }
+    }
+
+    .btn {
+      letter-spacing: 1px;
+      font-size: .5rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/*
+=============== 
+thoughts
+===============
+*/
+
+.thoughts {
+  background-color: var(--clr-bg-2);
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  .section-center {
+    padding-bottom: 2rem;
+  }
+
+  article {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    
+    p {
+      color: var(--clr-primary-1);
+    }
   }
 }

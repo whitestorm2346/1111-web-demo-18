@@ -15,11 +15,11 @@
   --clr-primary-10: #ecf8ff;
   /* background-color */
   --clr-bg-1: #C9ECFF;
-  --clr-bg-2: #b0f7ff;
-  --clr-bg-3: #b0fff6;
-  --clr-bg-4: #c0ffdf;
-  --clr-bg-5: #d7ffc1;
-  --clr-bg-6: #ffff9b;
+  --clr-bg-2: #d9fbff;
+  --clr-bg-3: #dbfffb;
+  --clr-bg-4: #ddffee;
+  --clr-bg-5: #e9ffdd;
+  --clr-bg-6: #ffffce;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -639,9 +639,10 @@ footer
 }
 .footer-reference .links {
   display: flex;
+  justify-content: space-around;
 }
 .footer-reference .links li {
-  margin: 0 5vw;
+  margin: 0 2rem;
 }
 .footer-reference .links li a {
   color: var(--clr-grey-7);
@@ -654,7 +655,103 @@ footer
   .footer {
     grid-template-areas: "logo reference";
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+}
+/*
+=============== 
+learning_18 
+===============
+*/
+/*
+=============== 
+problem-solving 
+===============
+*/
+.problem-solving {
+  background-color: var(--clr-bg-6);
+}
+.problem-solving .section-title {
+  margin-bottom: 4rem;
+}
+.problem-solving .section-center {
+  padding-bottom: 2rem;
+}
+.problem-solving .problem {
+  margin: 3rem auto;
+}
+.problem-solving .problem-title {
+  margin-top: 3rem;
+}
+.problem-solving .problem-describe p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+  color: var(--clr-primary-1);
+}
+.problem-solving .problem-img {
+  max-width: 50rem;
+}
+
+/*
+=============== 
+self-learning
+===============
+*/
+.self-learning {
+  background-color: var(--clr-bg-4);
+}
+.self-learning .section-title {
+  margin-bottom: 4rem;
+}
+.self-learning .section-center {
+  padding-bottom: 2rem;
+}
+.self-learning article {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.self-learning article p {
+  color: var(--clr-primary-1);
+}
+.self-learning .reference {
+  margin-top: 4rem;
+}
+.self-learning .reference li {
+  display: flex;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+.self-learning .reference li h4 {
+  margin: auto 1rem;
+  width: fit-content;
+}
+.self-learning .reference .btn {
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  text-transform: capitalize;
+}
+
+/*
+=============== 
+thoughts
+===============
+*/
+.thoughts {
+  background-color: var(--clr-bg-2);
+}
+.thoughts .section-title {
+  margin-bottom: 4rem;
+}
+.thoughts .section-center {
+  padding-bottom: 2rem;
+}
+.thoughts article {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.thoughts article p {
+  color: var(--clr-primary-1);
 }
 
 /*# sourceMappingURL=styles_18.css.map */
